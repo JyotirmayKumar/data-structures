@@ -20,7 +20,7 @@ public class SinglyLinkedList<E> implements Serializable {
 
     private Node<E> tail;
 
-    int size;
+    private int size;
 
     public boolean isEmpty(){
         return size == 0;
@@ -32,7 +32,7 @@ public class SinglyLinkedList<E> implements Serializable {
 
     public E first(){
         if(isEmpty())
-            return  null;
+            return null;
         return head.data;
     }
 
@@ -45,7 +45,7 @@ public class SinglyLinkedList<E> implements Serializable {
     public void addFirst(E data){
         head = new Node<>(data, head);
         if(isEmpty()){
-            head = tail;
+            tail = head;
         }
         size++;
     }
