@@ -9,7 +9,7 @@ public class SinglyLinkedListTest {
     private SinglyLinkedList<String> singlyLinkedList;
 
     @BeforeEach
-    void testBefore(){
+    public void testBefore(){
         singlyLinkedList = new SinglyLinkedList<>();
     }
 
